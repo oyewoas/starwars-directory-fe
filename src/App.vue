@@ -1,28 +1,37 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+
+    <NavBar/>
+    <CoreView/>
+    <CoreFooter/>
+
   </div>
 </template>
 
+<style lang="scss" scoped>
+  .app{
+    font-family: 'Roboto', sans-serif;
+
+  }
+</style>
+
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from '@/components/common/NavBar'
+import CoreView from '@/components/common/View'
+import CoreFooter from '@/components/common/Footer'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    HelloWorld
+    NavBar,
+    CoreView,
+    CoreFooter,
+  },
+  data () {
+    return {
+      //
+    }
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
