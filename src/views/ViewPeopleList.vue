@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <h1 class="header text-center mt-2 mb-5">People Directory</h1>
+    <h1 class="header text-center mt-2 mb-5">People</h1>
 
      <div class="row">
       <div class="col-md-3"></div>
@@ -36,7 +36,7 @@
   <PeopleList :peoplelists="peopleListFilter"/>
 
   <div v-if="loading" class=" text-center">
-    <PulseLoader class="loader" color="#866ec7" />
+    <PulseLoader class="loader" color="#6200EE" />
   </div>
   
 </div>
@@ -54,20 +54,24 @@
       margin-bottom: 200px;
     }
     .header{
-      color: #866ec7;
+      color: #6200EE;
       font-weight: bolder;
       text-transform: uppercase
     }
-
+    .form-control{
+      border: #6200EE solid 1px;
+      border-radius: 20px;
+      padding: 20px;
+    }
     .pagination{
       .btn{
         border: none;
-        color: #866ec7;
+        color: #6200EE;
         cursor: pointer;
         margin: 10px;
 
         &:hover{
-        background-color: #866ec7;
+        background-color: #6200EE;
         color: white;
       }
       }
@@ -111,7 +115,6 @@
             this.peoplelists = response.data.results
             vm.makePagination(response.data)
             this.loading = false;
-            console.log(this.peoplelists)
           })
           .catch(e => {
             this.errors.push(e)

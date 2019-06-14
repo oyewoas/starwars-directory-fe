@@ -9,7 +9,11 @@
 </template>
 
 <style lang='scss' scoped>
-    
+    #footer-text{
+      background: -webkit-linear-gradient(#6200EE, #E65100);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 </style>
 <script>
  // Utilities

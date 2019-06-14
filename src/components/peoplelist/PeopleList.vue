@@ -29,7 +29,7 @@
             </div>
             <div class="modal-body">
                 <div v-if="loading" class="col-md-12 text-center">
-                    <ClipLoader class="loader" color="#866ec7" />
+                    <ClipLoader class="loader" color="#6200EE" />
                 </div>
                 <div class="col-md-12" v-if="eachperson">
                         <div class = "card pb-3 mt-4 mb-4 ml-2 mr-2" >
@@ -66,19 +66,25 @@
        -webkit-box-shadow: 0px 0px 3px 1px rgba(158,153,158,1);
         -moz-box-shadow: 0px 0px 3px 1px rgba(158,153,158,1);
         box-shadow: 0px 0px 3px 1px rgba(158,153,158,1);
+        border-radius: 10px;
+        border: none;
         .card-header{
              padding-top: 20px;
             padding-bottom: 20px;
+            background-color: #6200EE;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
             .header{
                 font-size: 16px;
                 font-weight: bold;
-                color: #866ec7;
+                color: white
             }
             
             .name{
                 font-weight: 400;
                 font-size: 14px;
-                color: black
+                color: white
             }
         }
 
@@ -103,19 +109,26 @@
             .card-title{
                 font-size: 16px;
                 font-weight: bold;
-                color: #866ec7;
+                color: #6200EE;
             }
             .card-text{
                 font-size: 16px;
                 font-weight: bold;
-                color: #866ec7;
+                color: #6200EE;
             }
         }
         .view{
             text-transform: uppercase;
             font-weight: 500;
-            color: #8f71ff;
+            color: #6200EE;
             cursor: pointer;
+        }
+        .view:hover{
+           -webkit-box-shadow: 0px 0px 3px 1px rgba(158,153,158,1);
+            -moz-box-shadow: 0px 0px 3px 1px rgba(158,153,158,1);
+            box-shadow: 0px 0px 3px 1px rgba(158,153,158,1);
+            padding: 5px 10px;
+            border: none;
         }
     }
 
@@ -128,7 +141,7 @@
     }
     .modal-header{
         .header{
-            color: #866ec7;
+            color: #6200EE;
             font-weight: bolder;
             text-transform: uppercase;
         }
@@ -138,7 +151,7 @@
     }
     .modal-footer{
         .btn-secondary{
-            background-color: #8f71ff;
+            background-color: #6200EE;
             border: none
         }
     }

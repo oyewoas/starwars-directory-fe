@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <h1 class="header text-center mt-2 mb-5">Planets Directory</h1>
+    <h1 class="header text-center mt-2 mb-5">Planets</h1>
     <div class="row">
       <div class="col-md-3"></div>
       <div class="col-md-6 text-center">
@@ -24,7 +24,7 @@
     <PlanetList :planetlists="planetListFilter"/>
 
     <div v-if="loading" class="text-center">
-      <PulseLoader class="loader" color="#866ec7"/>
+      <PulseLoader class="loader" color="#E91E63"/>
     </div>
 </div>
 </template>
@@ -38,19 +38,24 @@
       margin-bottom: 200px;
     }
     .header{
-      color: #866ec7;
+      color: #E91E63;
       font-weight: bolder;
       text-transform: uppercase
+    }
+    .form-control{
+      border: #E91E63 solid 1px;
+      border-radius: 20px;
+      padding: 20px;
     }
      .pagination{
       .btn{
         border: none;
-        color: #866ec7;
+        color: #E91E63;
         cursor: pointer;
         margin: 10px;
 
         &:hover{
-        background-color: #866ec7;
+        background-color: #E91E63;
         color: white;
       }
       }

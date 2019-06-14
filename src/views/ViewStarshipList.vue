@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <h1 class="header text-center mt-2 mb-5">Starships Directory</h1>
+    <h1 class="header text-center mt-2 mb-5">Starships</h1>
     <div class="row">
       <div class="col-md-3"></div>
       <div class="col-md-6 text-center">
@@ -24,7 +24,7 @@
     <StarshipList  :starshiplists="starshipListFilter"/>
   
     <div v-if="loading" class=" text-center">
-        <PulseLoader class="loader" color="#866ec7"/>
+        <PulseLoader class="loader" color="#E65100"/>
     </div>
 </div>
   
@@ -41,19 +41,24 @@
     }
 
     .header{
-      color: #866ec7;
+      color: #E65100;
       font-weight: bolder;
       text-transform: uppercase
+    }
+    .form-control{
+      border: #E65100 solid 1px;
+      border-radius: 20px;
+      padding: 20px;
     }
     .pagination{
       .btn{
         border: none;
-        color: #866ec7;
+        color: #E65100;
         cursor: pointer;
         margin: 10px;
 
         &:hover{
-        background-color: #866ec7;
+        background-color: #E65100;
         color: white;
       }
       }

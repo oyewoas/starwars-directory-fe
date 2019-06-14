@@ -35,16 +35,21 @@
         
         .nav-item{
             font-size: 16px;
-            color: #866ec7;
+            background: -webkit-linear-gradient(#6200EE, #E65100);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             font-weight: 500;
             text-decoration: none;
         }
 
         .hero{
             text-transform: uppercase;
-            color: #866ec7;
             font-weight: bold;
+            font-size: 30px;
             text-decoration: none;
+            background: -webkit-linear-gradient(#6200EE, #E65100);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
     
