@@ -159,7 +159,9 @@
         data(){
             return{
                 eachplanet: '',
-                loading: true
+                loading: true,
+                errors: [],
+
             }
         },
          methods: {

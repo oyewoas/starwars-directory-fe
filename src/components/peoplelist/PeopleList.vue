@@ -16,7 +16,6 @@
         </div>
     </div>
     </div>
-    
     <div class="row">
         <!-- Modal -->
         <div class="modal fade" id="personModal" tabindex="-1" role="dialog" aria-labelledby="personModalLabel" aria-hidden="true">
@@ -157,12 +156,14 @@
             ClipLoader
         },
         props: {
-            peoplelists: Array
+            peoplelists: Array,
+
         },
         data(){
             return{
                 eachperson: '',
-                loading: true
+                loading: true,
+                errors: [],
             }
         },
         methods: {
@@ -177,6 +178,7 @@
                         this.errors.push(e)
                 })
             }
-  }
+        },  
+    
     }
 </script>

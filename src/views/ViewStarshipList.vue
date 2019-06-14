@@ -1,6 +1,16 @@
 <template>
 <div class="container">
     <h1 class="header text-center mt-2 mb-5">Starships Directory</h1>
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6 text-center">
+        <div class="search ">
+            <input type="text" class="form-control" v-model="search" id="search" placeholder="Search starship by name.."/>
+          </div>
+      </div>
+      <div class="col-md-3"></div>
+
+    </div>
     <div class="pagination">
       <button class="btn btn-prev" @click="loadPlanets(pagination.previous)"
               :disabled="!pagination.previous">
@@ -11,7 +21,7 @@
         :disabled="!pagination.next">Next Page
     </button>
   </div>
-    <StarshipList  :starshiplists="starshiplists"/>
+    <StarshipList  :starshiplists="starshipListFilter"/>
   
     <div v-if="loading" class=" text-center">
         <PulseLoader class="loader" color="#866ec7"/>
@@ -69,11 +79,12 @@
       return {
         starshiplists: [],
         errors: [],
-         loading: true,
+        loading: true,
         pagination: {},
         page: '',
         pageno: 0,
-        totalPage: 8
+        totalPage: 8,
+        search: ''
       }
     },
     methods: {
@@ -99,7 +110,17 @@
           this.pagination = pagination
       },
     },
-    
+    computed: {
+    starshipListFilter() 
+    {
+        const filter = this.starshiplists.filter((starship) =>
+        {
+          return starship.name.toLowerCase().includes(this.search.toLowerCase());
+        });
+      
+      return filter;
+     }
+    },
     mounted () {
       this.loadPlanets(url)
   }
