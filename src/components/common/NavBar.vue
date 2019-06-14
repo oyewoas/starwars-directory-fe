@@ -7,7 +7,7 @@
       </router-link>
       <button class="navbar-toggler" type="button" data-toggle='collapse' data-target='#myNav'>
         <span class="navbar-icon">
-          <i class="fas fa-bars"></i>
+          <i class="material-icons">menu</i>
         </span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="myNav">
@@ -41,7 +41,11 @@
             font-weight: 500;
             text-decoration: none;
         }
-
+        .material-icons{
+          background: -webkit-linear-gradient(#6200EE, #E65100);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
         .hero{
             text-transform: uppercase;
             font-weight: bold;
@@ -52,7 +56,13 @@
             -webkit-text-fill-color: transparent;
         }
     }
-    
+    @media only screen and (max-width: 420px){
+      .navbar{
+        .hero{
+          font-size: 20px;
+        }
+      }
+    }
 </style>
 
 <script>

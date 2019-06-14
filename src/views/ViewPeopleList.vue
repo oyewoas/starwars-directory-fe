@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <h1 class="header text-center mt-2 mb-5">People</h1>
+    <h1 class="header text-center mt-4 mb-5">People</h1>
 
      <div class="row">
       <div class="col-md-3"></div>
