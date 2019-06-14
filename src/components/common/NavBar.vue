@@ -35,23 +35,26 @@
         
         .nav-item{
             font-size: 16px;
-            background: -webkit-linear-gradient(#6200EE, #E65100);
+            background-image: linear-gradient(to right, #6200EE, #E91E63, #E65100);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-weight: 500;
             text-decoration: none;
         }
         .material-icons{
-          background: -webkit-linear-gradient(#6200EE, #E65100);
+          background-image: linear-gradient(to right, #6200EE, #E91E63, #E65100);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+        .nav-item:hover{
+          opacity: 0.7;
         }
         .hero{
             text-transform: uppercase;
             font-weight: bold;
             font-size: 30px;
             text-decoration: none;
-            background: -webkit-linear-gradient(#6200EE, #E65100);
+            background-image: linear-gradient(to right, #6200EE, #E91E63, #E65100);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }

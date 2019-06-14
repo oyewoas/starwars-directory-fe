@@ -78,14 +78,14 @@
         -webkit-box-shadow: 0px 0px 3px 1px rgba(158,153,158,1);
         -moz-box-shadow: 0px 0px 3px 1px rgba(158,153,158,1);
         box-shadow: 0px 0px 3px 1px rgba(158,153,158,1);
-        border-radius: 10px;
+        border-radius: 5px;
         border: none;
         .card-header{
             padding-top: 20px;
             padding-bottom: 20px;
             background-color: #E65100;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
             .header{
                 font-size: 16px;
                 font-weight: bold;
