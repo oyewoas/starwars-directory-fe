@@ -1,4 +1,5 @@
 # startwars-directory
+Check [Online](https://starwars-directory.herokuapp.com/).
 
 ## Project setup
 ```
