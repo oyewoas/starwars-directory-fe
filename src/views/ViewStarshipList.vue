@@ -72,7 +72,7 @@
   import StarshipList from '@/components/starshiplist/StarshipList'
   import axios from 'axios';
   import PulseLoader from 'vue-spinner/src/PulseLoader.vue'
-  const url = 'https://swapi.co/api/starships/'
+  const url = 'https://swapi.dev/api/starships/'
 
 
   export default {

@@ -85,7 +85,7 @@
   import PeopleList from '@/components/peoplelist/PeopleList'
   import axios from 'axios';
   import PulseLoader from 'vue-spinner/src/PulseLoader.vue'
-  const url = 'https://swapi.co/api/people/';
+  const url = 'https://swapi.dev/api/people/';
   export default {
     components: {
       PeopleList,

@@ -70,7 +70,7 @@
   import PlanetList from '@/components/planetlist/PlanetList'
   import axios from 'axios';
   import PulseLoader from 'vue-spinner/src/PulseLoader.vue'
-  const url = 'https://swapi.co/api/planets/'
+  const url = 'https://swapi.dev/api/planets/'
 
   export default {
     components: {
